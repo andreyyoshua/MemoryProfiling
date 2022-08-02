@@ -13,6 +13,8 @@
 		48EE22592898DCDB0000C958 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48EE22572898DCDB0000C958 /* Main.storyboard */; };
 		48EE225B2898DCDF0000C958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48EE225A2898DCDF0000C958 /* Assets.xcassets */; };
 		48EE225E2898DCDF0000C958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48EE225C2898DCDF0000C958 /* LaunchScreen.storyboard */; };
+		48EE22672898DF1D0000C958 /* SuperPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 48EE22662898DF1D0000C958 /* SuperPlayer */; };
+		48EE226F2898FFA70000C958 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 48EE226E2898FFA70000C958 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48EE22672898DF1D0000C958 /* SuperPlayer in Frameworks */,
+				48EE226F2898FFA70000C958 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,10 @@
 			dependencies = (
 			);
 			name = SuperProfiling;
+			packageProductDependencies = (
+				48EE22662898DF1D0000C958 /* SuperPlayer */,
+				48EE226E2898FFA70000C958 /* SnapKit */,
+			);
 			productName = SuperProfiling;
 			productReference = 48EE224E2898DCDB0000C958 /* SuperProfiling.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,10 @@
 				Base,
 			);
 			mainGroup = 48EE22452898DCDB0000C958;
+			packageReferences = (
+				48EE22652898DF1D0000C958 /* XCRemoteSwiftPackageReference "ios-superplayer" */,
+				48EE226D2898FFA70000C958 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 48EE224F2898DCDB0000C958 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -356,6 +368,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		48EE22652898DF1D0000C958 /* XCRemoteSwiftPackageReference "ios-superplayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tokopedia/ios-superplayer";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		48EE226D2898FFA70000C958 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		48EE22662898DF1D0000C958 /* SuperPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48EE22652898DF1D0000C958 /* XCRemoteSwiftPackageReference "ios-superplayer" */;
+			productName = SuperPlayer;
+		};
+		48EE226E2898FFA70000C958 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48EE226D2898FFA70000C958 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48EE22462898DCDB0000C958 /* Project object */;
 }
