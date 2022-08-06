@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48561265289E952300A56E55 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 48561264289E952300A56E55 /* Kingfisher */; };
 		48EE22522898DCDB0000C958 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EE22512898DCDB0000C958 /* AppDelegate.swift */; };
 		48EE22542898DCDB0000C958 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EE22532898DCDB0000C958 /* SceneDelegate.swift */; };
 		48EE22562898DCDB0000C958 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EE22552898DCDB0000C958 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48561265289E952300A56E55 /* Kingfisher in Frameworks */,
 				48EE22672898DF1D0000C958 /* SuperPlayer in Frameworks */,
 				48EE226F2898FFA70000C958 /* SnapKit in Frameworks */,
 			);
@@ -90,6 +92,7 @@
 			packageProductDependencies = (
 				48EE22662898DF1D0000C958 /* SuperPlayer */,
 				48EE226E2898FFA70000C958 /* SnapKit */,
+				48561264289E952300A56E55 /* Kingfisher */,
 			);
 			productName = SuperProfiling;
 			productReference = 48EE224E2898DCDB0000C958 /* SuperProfiling.app */;
@@ -122,6 +125,7 @@
 			packageReferences = (
 				48EE22652898DF1D0000C958 /* XCRemoteSwiftPackageReference "ios-superplayer" */,
 				48EE226D2898FFA70000C958 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				48561263289E952300A56E55 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 48EE224F2898DCDB0000C958 /* Products */;
 			projectDirPath = "";
@@ -370,6 +374,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		48561263289E952300A56E55 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		48EE22652898DF1D0000C958 /* XCRemoteSwiftPackageReference "ios-superplayer" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/tokopedia/ios-superplayer";
@@ -389,6 +401,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		48561264289E952300A56E55 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 48561263289E952300A56E55 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		48EE22662898DF1D0000C958 /* SuperPlayer */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 48EE22652898DF1D0000C958 /* XCRemoteSwiftPackageReference "ios-superplayer" */;
